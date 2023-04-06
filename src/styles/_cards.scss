@@ -1,0 +1,14 @@
+.cards {
+    height: 650px;
+
+    &__title {
+        font-size: 40px;
+        color: #000000;
+        margin-bottom: 80px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-around;
+    }
+}
