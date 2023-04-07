@@ -9,6 +9,12 @@
 
     &__container {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        @include media-breakpoint-up(md) {
+            flex-direction: row;
+            justify-content: space-around;
+        }
     }
 }

@@ -1,0 +1,27 @@
+.statistics {
+    height: 400px;
+    background-color: #C78000;
+    padding-top: 70px;
+
+    &__title {
+        font-size: 40px;
+        color: #ffffff;
+        margin-bottom: 80px;
+    }
+
+    &__background {
+        &-up {
+            fill: #C78000;
+        }
+
+        &-down {
+            fill: #C78000;
+            transform: rotate(180deg);
+        }
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
