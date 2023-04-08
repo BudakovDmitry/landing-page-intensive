@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
-    "bootstrap": "^5.2.2"
+    "bootstrap": "^5.2.2",
+    "swiper": "^9.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.2",

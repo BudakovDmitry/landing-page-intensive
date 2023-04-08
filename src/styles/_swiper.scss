@@ -1,0 +1,55 @@
+.swiper {
+    padding-bottom: 70px;
+
+    &-button {
+        &-prev {
+            opacity: 0;
+            transition: all 0.5s;
+
+            &.swiper-button-disabled {
+                opacity: 0;
+                transition: all 0.5s;
+                &.hover {
+                    opacity: 0.35;
+                }
+            }
+
+            &.hover {
+                opacity: 1;
+            }
+            &::after {
+                color: $main-color;
+            }
+        }
+
+        &-next {
+            opacity: 0;
+            transition: all 0.5s;
+
+            &.swiper-button-disabled {
+                opacity: 0;
+                transition: all 0.5s;
+                &.hover {
+                    opacity: 0.35;
+                }
+            }
+
+            &.hover {
+                opacity: 1;
+            }
+            &::after {
+                color: $main-color;
+            }
+        }
+    }
+
+    &-pagination-bullet {
+        width: 14px;
+        height: 14px;
+        background-color: #808080;
+
+        &-active {
+            background-color: $main-color;
+        }
+    }
+}

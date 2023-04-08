@@ -1,6 +1,7 @@
 /* eslint-disable radix */
 import './styles.scss';
 import './index.html';
+import Swiper, { Navigation, Pagination } from 'swiper';
 
 function windowLoad() {
   function digistCountersAnimate(digistCounter) {
@@ -63,6 +64,44 @@ function windowLoad() {
       observer.observe(section);
     });
   }
+
+  // eslint-disable-next-line no-unused-vars
+  const swiper = new Swiper('.swiper', {
+    modules: [Navigation, Pagination],
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+    // navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev',
+    // },
+    slidesPerView: 1,
+    spaceBetween: 10,
+    breakpoints: {
+      1200: {
+        slidesPerView: 2,
+        spaceBetween: 100,
+      },
+    },
+  });
+
+  // const swiperContainer = document.querySelector('.swiper');
+  // const buttonPrev = document.querySelector('.swiper-button-prev');
+  // const buttonNext = document.querySelector('.swiper-button-next');
+
+  // if (swiperContainer) {
+  //   swiperContainer.addEventListener('mouseover', () => {
+  //     buttonPrev.classList.add('hover');
+  //     buttonNext.classList.add('hover');
+  //   });
+
+  //   swiperContainer.addEventListener('mouseout', () => {
+  //     buttonPrev.classList.remove('hover');
+  //     buttonNext.classList.remove('hover');
+  //   });
+  // }
 }
 
 window.addEventListener('load', windowLoad);
