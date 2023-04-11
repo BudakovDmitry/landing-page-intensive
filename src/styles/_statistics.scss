@@ -1,6 +1,6 @@
 .statistics {
     height: 400px;
-    background-color: #C78000;
+    background-color: #FDB831;
     padding-top: 70px;
 
     &__title {
@@ -11,11 +11,11 @@
 
     &__background {
         &-up {
-            fill: #C78000;
+            fill: #FDB831;
         }
 
         &-down {
-            fill: #C78000;
+            fill: #FDB831;
             transform: rotate(180deg);
             margin-top: -1px;
         }
