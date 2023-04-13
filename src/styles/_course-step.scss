@@ -1,10 +1,26 @@
 .course-step {
     flex: 1 1;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+    @include media-breakpoint-up(md) { 
+        flex-direction: column;
+        margin-bottom: 0;
+    }
 
     &__icon {
-        margin-bottom: 30px;
         display: flex;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        @include media-breakpoint-up(md) { 
+            margin-bottom: 30px;
+            margin-right: 0;
+        }
+
         &-line {
             background-color: #F71F5C;
             width: 110%;
@@ -12,6 +28,11 @@
             margin-top: 23px;
             text-align: left;
             z-index: 1;
+            display: none;
+
+            @include media-breakpoint-up(md) { 
+                display: block;
+            }
 
             &.none {
                 opacity: 0;
@@ -41,13 +62,22 @@
 
     &__title {
         font-weight: 500;
-        font-size: 20px;
-        margin-bottom: 30px;
+        font-size: 16px;
+        margin-bottom: 10px;
+        @include media-breakpoint-up(md) { 
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
     }
 
     &__description {
-        padding: 0 20px;
-        font-size: 18px;
+        padding: 0;
+        font-size: 14px;
         line-height: 24px;
+        text-align: start;
+        @include media-breakpoint-up(md) { 
+            font-size: 18px;
+            padding: 0 20px;
+        }
     }
 }

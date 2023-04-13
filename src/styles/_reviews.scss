@@ -1,11 +1,21 @@
 .reviews {
-    height: 550px;
-    padding-top: 70px;
+    // height: 550px;
+    padding-top: 20px;
     margin-bottom: 100px;
 
+    @include media-breakpoint-up(md) { 
+        padding-top: 70px;
+        margin-bottom: 100px;
+    }
+
     &__title {
-        font-size: 40px;
+        font-size: 20px;
         color: #000000;
-        margin-bottom: 80px;
+        margin-bottom: 20px;
+
+        @include media-breakpoint-up(md) { 
+            font-size: 40px;
+            margin-bottom: 80px;
+        }
     }
 }

@@ -1,5 +1,8 @@
 .swiper {
-    padding-bottom: 70px;
+    padding-bottom: 30px;
+    @include media-breakpoint-up(md) { 
+        padding-bottom: 70px;
+    }
 
     &-button {
         &-prev {
@@ -44,9 +47,13 @@
     }
 
     &-pagination-bullet {
-        width: 14px;
-        height: 14px;
+        width: 10px;
+        height: 10px;
         background-color: #808080;
+        @include media-breakpoint-up(md) { 
+            width: 14px;
+            height: 14px;
+        }
 
         &-active {
             background-color: $main-color;

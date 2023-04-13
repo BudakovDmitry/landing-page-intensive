@@ -2,12 +2,22 @@
     background-color: #ffffff;
     border-radius: 20px;
     padding: 20px 30px;
-    flex: 0 0 31%;
-    max-width: 31%;
+    flex: 0 0 90%;
+    max-width: 90%;
+    margin-bottom: 20px;
+
+    @include media-breakpoint-up(lg) { 
+        flex: 0 0 31%;
+        max-width: 31%;
+        margin-bottom: 0;
+    } 
 
     &__title {
-        font-size: 26px;
+        font-size: 22px;
         font-weight: 700;
+        @include media-breakpoint-up(md) { 
+            font-size: 26px;
+        }
 
         &-container {
             display: flex;
@@ -32,9 +42,14 @@
         border-bottom: 1px solid #FDB831;
 
         &-item {
-            font-size: 16px;
-            padding: 15px 0;
-            line-height: 24px;
+            font-size: 14px;
+            padding: 5px 0;
+            line-height: 18px;
+            @include media-breakpoint-up(md) { 
+                font-size: 16px;
+                padding: 15px 0;
+                line-height: 24px;
+            }
 
             &.disabled {
                 color: rgba(191,220,225,1);
@@ -51,16 +66,22 @@
     }
 
     &__price-current {
-        font-size: 28px;
+        font-size: 22px;
         font-weight: 700;
         margin-right: 40px;
+        @include media-breakpoint-up(md) { 
+            font-size: 28px;
+        }
     }
 
     &__price-before {
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 500;
         text-decoration: line-through;
         color: rgb(247, 31, 92);
+        @include media-breakpoint-up(md) { 
+            font-size: 20px;
+        }
     }
 
     &__link {
@@ -70,10 +91,15 @@
         background-color: rgba(38,42,46,1);
         color: #ffffff;
         border-radius: 20px;
-        padding: 15px 0;
-        font-size: 20px;
+        padding: 10px 0;
+        font-size: 16px;
         margin-bottom: 10px;
         transition: all 0.3s;
+
+        @include media-breakpoint-up(md) { 
+            font-size: 20px;
+            padding: 15px 0;
+        }
 
         &:hover {
             background-color: #FDB831;

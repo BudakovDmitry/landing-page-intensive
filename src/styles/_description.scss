@@ -1,12 +1,16 @@
 .description {
-    height: 950px;
+    // height: 950px;
     background-color: $main-second-color;
     transform: skewY(-5deg);
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    padding: 50px 0;
+    @include media-breakpoint-up(md) { 
+      margin-bottom: 100px;
+    }
 
     &__container {
         transform: skewY(5deg);
@@ -17,14 +21,20 @@
     }
 
     &__text {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         color: #ffffff;
-        font-size: 24px;
-        line-height: 30px;
+        font-size: 16px;
+        line-height: 20px;
         max-width: 700px;
         text-align: center;
         position: relative;
         z-index: 1;
+
+        @include media-breakpoint-up(md) { 
+          font-size: 24px;
+          line-height: 30px;
+          margin-bottom: 30px;
+        }
 
         strong {
             color: $main-third-color;
@@ -32,13 +42,18 @@
     }
 
     &__background-image {
-        width: 70%;
+        width: 100%;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 0;
         opacity: 0.5;
+
+        @include media-breakpoint-up(md) { 
+          width: 70%;
+        }
+
     }
 
     &__mouse-scroll {

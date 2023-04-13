@@ -1,39 +1,60 @@
 .statistic-item {
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
+    @include media-breakpoint-up(md) { 
+        margin-bottom: 0;
+    }
 
     &__icon {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 45px;
+        width: 20px;
         height: auto;
+        @include media-breakpoint-up(md) { 
+            width: 45px;
+        }
 
         &-container {
-            width: 80px;
-            height: 80px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
             background-color: $main-second-color;
             margin-right: 20px;
             position: relative;
+
+                @include media-breakpoint-up(md) { 
+                    width: 80px;
+                    height: 80px;
+                }
         }
     }
 
     &__title {
-        font-size: 28px;
+        font-size: 16px;
         color: #ffffff;
         font-weight: 500;
         margin-bottom: 5px;
+        @include media-breakpoint-up(md) { 
+            font-size: 28px;
+        }
         &-count {
-            font-size: 34px;
+            font-size: 18px;
             font-weight: 700;
+            @include media-breakpoint-up(md) { 
+                font-size: 34px;
+            }
         } 
     }
 
     &__description {
-        font-size: 20px;
+        font-size: 14px;
         color: #ffffff;
         margin: 0;
+        @include media-breakpoint-up(md) { 
+            font-size: 20px;
+        }
     }
 }

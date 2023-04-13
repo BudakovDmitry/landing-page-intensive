@@ -16,6 +16,7 @@
 @import 'styles/course-step';
 @import 'styles/prices';
 @import 'styles/price-card';
+@import 'styles/footer';
 @import 'swiper/scss';
 @import 'swiper/scss/navigation';
 @import 'swiper/scss/pagination';
@@ -59,10 +60,8 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
-// @include media-breakpoint-down(sm) {
-//   body {
-//     overflow-x: hidden;
-//     margin: 0;
-//     padding: 0;
-//   }
-// }
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
