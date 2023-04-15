@@ -30,7 +30,7 @@
     &__background {
         &-up {
             fill: #FDB831;
-            width: 160%;
+            width: 100%;
             @include media-breakpoint-up(md) { 
                 width: 100%;
             }
@@ -41,7 +41,7 @@
             transform: rotate(180deg);
             margin-top: -5px;
             background-color: rgb(38, 42, 46);
-            width: 160%;
+            width: 100%;
             @include media-breakpoint-up(md) { 
                 width: 100%;
                 margin-top: -1px;

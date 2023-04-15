@@ -21,7 +21,7 @@
     &__background {
         &-up {
             fill: #FDB831;
-            width: 160%;
+            width: 100%;
             @include media-breakpoint-up(md) { 
                 width: 100%;
             }
@@ -31,9 +31,8 @@
             fill: #FDB831;
             transform: rotate(180deg);
             margin-top: -5px;
-            width: 160%;
+            width: 100%;
             @include media-breakpoint-up(md) { 
-                width: 100%;
                 margin-top: -1px;
             }
         }
