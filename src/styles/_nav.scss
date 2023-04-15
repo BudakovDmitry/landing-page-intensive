@@ -15,16 +15,28 @@
 
         &-social {
             position: absolute;
-            left: 9%;
-            top: 25%;
+            left: 50%;
+            top: 80%;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             padding: 0;
+            transform: translate(-50%, 0);
+
+            @include media-breakpoint-up(md) {
+                left: 9%;
+                top: 25%;
+                transform: none;
+                flex-direction: column;
+            }
         }
     }
     
     &__social-item {
-        margin-bottom: 20px;
+        margin: 0 10px 20px;
+
+        @include media-breakpoint-up(md) {
+            margin: 0 0 20px 0
+        }
 
         &-link {
             display: block;
@@ -73,26 +85,42 @@
             position: absolute;
             left: 9%;
             top: 7%;
+            display: none;
+            @include media-breakpoint-up(md) {
+                display: block;
+            }
         }
 
         &.top-right {
             position: absolute;
-            right: 8%;
-            top: 9%;
+            right: 3%;
+            top: 7%;
             transform: rotate(90deg);
+            @include media-breakpoint-up(md) {
+                right: 8%;
+                top: 9%;
+            }
         }
 
         &.bottom-left {
             position: absolute;
-            left: 8%;
+            left: 2%;
             bottom: 13%;
             transform: rotate(90deg);
+            @include media-breakpoint-up(md) {
+                left: 8%;
+                bottom: 13%;
+            }
         }
 
         &.bottom-right {
             position: absolute;
-            right: 10%;
+            right: 8%;
             bottom: 8%;
+            @include media-breakpoint-up(md) {
+                right: 10%;
+                bottom: 8%;
+            }
         }
     }
 }
