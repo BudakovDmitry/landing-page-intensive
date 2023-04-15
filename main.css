@@ -10841,7 +10841,7 @@ textarea.form-control-lg {
 }
 .main__info {
   position: absolute;
-  top: 65%;
+  top: 70%;
   left: 65%;
   transform: translate(-50%, -50%);
   z-index: 20;
@@ -11283,7 +11283,7 @@ textarea.form-control-lg {
 }
 .statistics__background-up {
   fill: #FDB831;
-  width: 160%;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .statistics__background-up {
@@ -11294,11 +11294,10 @@ textarea.form-control-lg {
   fill: #FDB831;
   transform: rotate(180deg);
   margin-top: -5px;
-  width: 160%;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .statistics__background-down {
-    width: 100%;
     margin-top: -1px;
   }
 }
@@ -11734,7 +11733,7 @@ textarea.form-control-lg {
 }
 .prices__background-up {
   fill: #FDB831;
-  width: 160%;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .prices__background-up {
@@ -11746,7 +11745,7 @@ textarea.form-control-lg {
   transform: rotate(180deg);
   margin-top: -5px;
   background-color: rgb(38, 42, 46);
-  width: 160%;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .prices__background-down {
