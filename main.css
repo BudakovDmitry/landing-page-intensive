@@ -10982,6 +10982,8 @@ textarea.form-control-lg {
   left: 9%;
   top: 7%;
   display: none;
+  font-size: 32px;
+  font-weight: 700;
 }
 @media (min-width: 768px) {
   .nav__item.top-left {
