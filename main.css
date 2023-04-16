@@ -11067,7 +11067,7 @@ textarea.form-control-lg {
   color: #f9a889;
 }
 .description__background-image {
-  width: 100%;
+  height: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -11174,6 +11174,11 @@ textarea.form-control-lg {
     opacity: 1;
   }
 }
+@media (min-width: 768px) {
+  .cards {
+    padding: 100px 0;
+  }
+}
 .cards__title {
   font-size: 20px;
   color: #000000;
@@ -11248,12 +11253,12 @@ textarea.form-control-lg {
   font-size: 14px;
   text-align: center;
   line-height: 16px;
-  min-height: 100px;
+  min-height: 90px;
 }
 @media (min-width: 768px) {
   .card__text {
     font-size: 22px;
-    min-height: 130px;
+    min-height: 110px;
     line-height: 30px;
   }
 }
@@ -11263,11 +11268,11 @@ textarea.form-control-lg {
 
 .statistics {
   background-color: #FDB831;
-  padding-top: 20px;
+  padding: 20px 0;
 }
 @media (min-width: 768px) {
   .statistics {
-    padding-top: 70px;
+    padding: 100px 0;
   }
 }
 .statistics__title {
@@ -11417,7 +11422,6 @@ textarea.form-control-lg {
   .review__title {
     font-size: 20px;
     margin-bottom: 30px;
-    font-style: normal;
   }
 }
 .review__description {
@@ -11534,7 +11538,7 @@ textarea.form-control-lg {
   .about-me__card {
     width: 350px;
     top: -200px;
-    right: 8%;
+    right: 7%;
   }
 }
 .about-me__card-photo {
@@ -11554,7 +11558,7 @@ textarea.form-control-lg {
   .about-me__card-photo {
     width: 400px;
     top: -250px;
-    right: 15%;
+    right: 14%;
   }
 }
 .about-me__card-photo img {
@@ -11589,7 +11593,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 768px) {
   .course-time {
-    padding: 100px 0;
+    padding: 0 0 100px;
   }
 }
 .course-time__title {
@@ -11696,6 +11700,7 @@ textarea.form-control-lg {
   .course-step__description {
     font-size: 18px;
     padding: 0 20px;
+    text-align: center;
   }
 }
 
