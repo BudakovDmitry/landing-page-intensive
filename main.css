@@ -11008,7 +11008,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 768px) {
   .nav__item.bottom-left {
-    left: 8%;
+    left: 6%;
     bottom: 13%;
   }
 }

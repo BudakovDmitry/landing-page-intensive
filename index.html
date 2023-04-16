@@ -6,24 +6,23 @@
     <title>Landing page - intensive</title>
   <script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item top-left">
-            <a href="#" class="nav__item-link"
-              >Dew<br />Festival<br />
-              May 28</a
-            >
+            <a href="#header" class="nav__item-link">Твої<br />Цілі<br />2023</a>
           </li>
-          <li class="nav__item top-right">
-            <a href="#" class="nav__item-link">Info</a>
-          </li>
+          <!-- <li class="nav__item top-right">
+            <a href="#prices" class="nav__item-link">Забронювати</a>
+            <a href="#description" class="nav__item-link">Опис</a>
+          </li> -->
           <li class="nav__item bottom-left">
-            <a href="#" class="nav__item-link">Line Up</a>
+            <a href="#prices" class="nav__item-link">Забронювати</a>
+            <!-- <a href="#" class="nav__item-link"></a> -->
           </li>
-          <li class="nav__item bottom-right">
-            <a href="#" class="nav__item-link">Buy tickets</a>
-          </li>
+          <!-- <li class="nav__item bottom-right">
+            <a href="#prices" class="nav__item-link">Забронювати</a>
+          </li> -->
           <ul class="nav__list-social">
             <li class="nav__social-item">
               <a
@@ -62,11 +61,11 @@
         <div class="main__info-container">
           <h1 class="main__title">Інтенсив<br />Твої цілі</h1>
           <p class="main__year">2023</p>
-          <a href="#" class="main__link btn">Деталі</a>
+          <a href="#description" class="main__link btn">Деталі</a>
         </div>
       </div>
     </main>
-    <section class="description">
+    <section class="description" id="description">
       <div class="description__container container">
         <img
           src="images/background-second.svg"
@@ -85,8 +84,7 @@
           <strong>втілити цю ціль у життя</strong>. Все що ми з вами пропрацюємо, стане основою
           наших майбутніх думок на шляху <strong>реалізації наших цілей</strong>
         </p>
-
-        <a href="#">
+        <a href="#cards">
           <div class="description__mouse-scroll">
             <div class="description__mouse">
               <div class="description__mouse-in"></div>
@@ -100,7 +98,7 @@
         </a>
       </div>
     </section>
-    <section class="cards">
+    <section class="cards" id="cards">
       <div class="container">
         <h2 class="cards__title">Цей інтенсив вам точно підійде, якщо:</h2>
         <div class="cards__container">
@@ -532,7 +530,7 @@
         d="M43 0.57373L78.5 36.0732L114 0.57373L149.5 36.0732L185 0.57373L220.5 36.0732L256 0.57373L291.5 36.0732L327 0.57373L362.5 36.0732L398 0.57373L433.5 36.0732L469 0.57373L504.5 36.0732L540 0.57373L575.5 36.0732L611 0.57373L646.5 36.0732L682 0.57373L717.5 36.0732L753 0.57373L788.5 36.0732L824 0.57373L859.5 36.0732L895 0.57373L930.5 36.0732L966 0.57373L1001.5 36.0732L1037 0.57373L1072.5 36.0732L1108 0.57373L1143.5 36.0732L1179 0.57373L1214.5 36.0732L1250 0.57373L1285.5 36.0732L1321 0.57373L1356.5 36.0732L1392 0.57373L1427.5 36.0732L1463 0.57373L1498.5 36.0732L1534 0.57373L1569.5 36.0732L1605 0.57373L1640.5 36.0732L1676 0.57373L1711.5 36.0732L1747 0.57373L1782.5 36.0732L1818 0.57373L1853.5 36.0732L1889 0.57373L1924.5 36.0732L1960 0.57373L1995.5 36.0732L2031 0.57373L2066.5 36.0732L2102 0.57373L2144.43 43H0.573242L43 0.57373Z"
       ></path>
     </svg>
-    <section class="prices">
+    <section class="prices" id="prices">
       <div class="container">
         <h2 class="prices__title">Виберіть зручний формат інтенсиву</h2>
         <div class="prices__cards">
@@ -550,7 +548,9 @@
               <li class="price-card__list-item disabled">
                 Місячний супровід після закінчення інтенсиву
               </li>
-              <li class="price-card__list-item disabled">Індивідуальна онлайн гра "Ліла"</li>
+              <li class="price-card__list-item disabled">
+                Індивідуальна онлайн гра "Ліла" з вашою ціллю
+              </li>
             </ul>
             <div class="price-card__prices">
               <span class="price-card__price-current">290 &#8372;</span>
@@ -571,7 +571,9 @@
               <li class="price-card__list-item">Спільний мастермайнд з Дар'єю</li>
               <li class="price-card__list-item">Зворотній зв'язок по домашнім завданням</li>
               <li class="price-card__list-item">Місячний супровід після закінчення інтенсиву</li>
-              <li class="price-card__list-item disabled">Індивідуальна онлайн гра "Ліла"</li>
+              <li class="price-card__list-item disabled">
+                Індивідуальна онлайн гра "Ліла" з вашою ціллю
+              </li>
             </ul>
             <div class="price-card__prices">
               <span class="price-card__price-current">750 &#8372;</span>
@@ -591,7 +593,7 @@
               <li class="price-card__list-item">Спільний мастермайнд з Дар'єю</li>
               <li class="price-card__list-item">Зворотній зв'язок по домашнім завданням</li>
               <li class="price-card__list-item">Місячний супровід після закінчення інтенсиву</li>
-              <li class="price-card__list-item">Індивідуальна онлайн гра "Ліла"</li>
+              <li class="price-card__list-item">Індивідуальна онлайн гра "Ліла" з вашою ціллю</li>
             </ul>
             <div class="price-card__prices">
               <span class="price-card__price-current">1 500 &#8372;</span>
