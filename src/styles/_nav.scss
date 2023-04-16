@@ -90,6 +90,8 @@
             left: 9%;
             top: 7%;
             display: none;
+            font-size: 32px;
+            font-weight: 700;
             @include media-breakpoint-up(md) {
                 display: block;
             }
