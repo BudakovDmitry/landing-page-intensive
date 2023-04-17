@@ -10842,7 +10842,7 @@ textarea.form-control-lg {
 }
 .main__info {
   position: absolute;
-  top: 70%;
+  top: 75%;
   left: 65%;
   transform: translate(-50%, -50%);
   z-index: 20;
