@@ -10881,6 +10881,9 @@ textarea.form-control-lg {
     top: 40px;
   }
 }
+.main__start_date {
+  color: #ffffff;
+}
 .main__link {
   display: block;
   width: 100px;
