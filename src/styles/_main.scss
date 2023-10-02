@@ -1,6 +1,7 @@
 .main {
     position: relative;
     height: 100%;
+    overflow-x: hidden;
     @include media-breakpoint-up(md) { 
         margin-bottom: 100px;
     }

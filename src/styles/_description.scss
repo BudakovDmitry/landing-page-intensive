@@ -8,6 +8,7 @@
     justify-content: center;
     margin-bottom: 50px;
     padding: 50px 0;
+    overflow-x: hidden;
     @include media-breakpoint-up(md) { 
       margin-bottom: 100px;
     }
