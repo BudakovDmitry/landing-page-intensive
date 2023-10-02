@@ -10799,6 +10799,7 @@ textarea.form-control-lg {
 .main {
   position: relative;
   height: 100%;
+  overflow-x: hidden;
 }
 @media (min-width: 768px) {
   .main {
@@ -11039,6 +11040,7 @@ textarea.form-control-lg {
   justify-content: center;
   margin-bottom: 50px;
   padding: 50px 0;
+  overflow-x: hidden;
 }
 @media (min-width: 768px) {
   .description {
